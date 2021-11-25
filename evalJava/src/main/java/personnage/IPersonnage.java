@@ -4,11 +4,11 @@ public interface IPersonnage {
 	
 	public void frapper(Personnage personnage);
 	
-	public void subirDegats(int degats);
+	//public void subirDegats();
 	
-	//public void seProtéger();
+	public void seSoigner();
 	
-	public void seSoigner(int degats);
+	public void seProteger();
 	
 	public boolean estVivant();
 	

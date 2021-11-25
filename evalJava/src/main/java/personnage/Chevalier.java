@@ -2,50 +2,17 @@ package personnage;
 
 public class Chevalier extends Personnage{
 	
-	private boolean protection;
-
-	public Chevalier(String nom, int pointsDevie, boolean protection) {
-		super(nom, pointsDevie);
-		this.protection = protection;
-	}
 	
-	
-
-
-	public boolean hasProtection() {
-		return protection;
+	public Chevalier(String nom, int pointsDeVie) {
+		super(nom, pointsDeVie);
 	}
 
-
-
-
-	public void setProtection(boolean protection) {
-		this.protection = protection;
+	@Override
+	public void seProteger() {
+		//int pointAvantFrappe = this.getPointsDeVie()+ degats;-
+		this.setPointsDeVie(100);
+		System.out.println(this.getNom() + " a ,maintenant "+ getPointsDeVie() + " Points de vie ");
 	}
 
-
-
-
-	public void frapper(Personnage personnage) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void subirDegats(int degats) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void seSoigner(int degats) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public boolean estVivant() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-	
-	
 
 }
